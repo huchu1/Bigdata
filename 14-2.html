@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="ice"></p>
+    <button onclick="test()">확인</button>
+    <script>
+        var price = 5000;
+        var num = 2;
+
+        var text = "아이스크림을 " + price + "원에 " + num + "개 구매했습니다";
+        var text2 = `초콜릿을 ${price}원에 ${num}개 샀습니다`;
+                   // ` -> 백틱 이땐 변수명을 ${}로 묶어줌 
+
+        document.write(text, "<br>");
+        
+        //function : 함수. 함수 이름을 불렀을 때 명령문이 호출됨. 
+        function test() {//document.write(text2); -> 기존값 사라지고 그 위에 뜸
+        document.getElementById('ice').innerHTML = text2 //p태그 안에 들어가는거라 위에 뜸
+        }
+    </script>
+</body>
+</html>

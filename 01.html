@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화면출력</title>
+</head>
+<body>
+    <h1 id="test"></h1>
+    <script>
+        //보통 출력하고 싶은 곳 바로 아래에 스크립트 열어서 적음 실행하고자 하는 대상의 아래쪽, 바디 아래쪽. 자바스크립트는 위에서 아래로 바로 읽어버리기 때문에 엘리먼트의 경우 test 박스를 먼저 읽고 그 다음에 자바로 인식한 박스를 담아야하는데 순서가 바뀌면 스크립트에서 먼저 실행할때 테스트 박스의 위치를 몰라서 실행이 안됨. 결론 : 실행하고싶은 박스의 바로 아래에 스크립트를 놔야함.
+        //위에서부터 아래로 한줄한줄 즉시 실행됨
+        //window는 생략 가능   객체.명령어("");   로 씀 문자열은 따옴표로 묶음 산수는 따옴표없이 적음
+        window.alert(2*5); //경고창
+        console.log(1+1); //콘솔 탭에 출력됨 많이 씀 텍스트에 연산자 붙이면 연결돼서 출력됨
+        document.write('javascript');
+        document.getElementById('test').innerHTML = 'HI'; //document는 문서, element는 태그 목록을 봄 =는 대입연상자
+    </script>
+</body>
+</html>
