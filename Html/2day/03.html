@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://127.0.0.1:5500/today/03.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기소개</title>
+</head>
+<body>
+    <div id="wrap">
+        <h1>Kyunghee Ko</h1>
+        <p>이메일 : funcom@gmail.com</p>
+        <br>
+        <h2>Who I am?</h2>
+        <p>프런트엔드 웹 기술(Front-end Web Tech.)에 관심을 가지고 있습니다.
+            현재 마이크로소프트 공인 최고기술전문가<del>(Most Valuable Professional)</del>로 활동 중이며,
+            제주의 한 시골 마을에서 코딩 중입니다.</p>
+        <hr>
+        <h2>Skills</h2>
+        <ul>
+            <li>사용 언어</li>
+            <ul>
+                <li><mark>HTML</mark></li>
+                <li><mark>CSS</mark></li>
+                <li>Javascript</li>
+                <li>jQuery</li>
+                <li><b>Vue.js</b></li>
+            </ul>
+            <li>사용 툴</li>
+            <ul>
+                <li>visual studio code (1years)</li>
+            </ul>
+        </ul>
+        <!--ul>li*5-->
+        <ul>
+            <li><mark>HTML</mark></li>
+            <li><mark>CSS</mark></li>
+            <li>Javascript</li>
+            <li>jQuery</li>
+            <li><b>Vue.js</b></li>
+        </ul>
+        <h4>사용 툴</h4>
+        <ul>
+            <li>visual studio code (1years)</li>
+        </ul>
+        <h2>Academic</h2>
+        <!--table>tr*3td*4-->
+        <table border="1">
+            <caption>학력사항</caption>
+            <tbody><tr>
+                <th colspan="2">출신학교</th>
+                <!-- <th>전공</th> -->
+                <th>기간</th>
+                <th>졸업구분</th>
+            </tr>
+            <tr>
+                <td>ㅇㅇㅇ고등학교</td>
+                <td>(해당사항 없음)</td>
+                <td>2001.3 ~ 2004.2</td>
+                <td rowspan="2">졸업</td>
+            </tr>
+            <tr>
+                <td>ㅁㅁ대학교</td>
+                <td>컴퓨터공학</td>
+                <td>2004.3 ~ 2008.2</td>
+                <!-- <td>졸업</td> -->
+            </tr>
+        </tbody></table>
+    </div>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

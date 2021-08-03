@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!--클래스는 . 아이디는 # 아이디는 똑같은 이름을 한개에만 적용함 클래스는 같은 이름도 여러개 적용 가능-->
+    <style>
+        /*css, 자바 주석
+        CSS 우선 순위
+        !important 뒤에 붙이기(급할때만) > 인라인 style 속성 작성 > #아이디 선택자 > .클래스 선택자 > 태그 선택자(화면의 모든 태그가 동일하게 바뀜)        
+        */
+        p {
+            color: red;
+        }
+
+        .tomato {
+            color: blue;
+        }
+
+        #menu1 {
+            border: 5px solid orange;
+            color: yellow;
+        }
+
+        #menu2 {
+            border: 5px solid skyblue
+        }
+
+        #menu3 {
+            border: 5px solid violet
+        }
+    </style>
+</head>
+
+<body>
+    <!--html 주석-->
+    <h1>
+    </h1>
+    <ul>
+        <li> <a href="#menu1">menu1</a> </li>
+        <li> <a href="#menu2">menu2</a> </li>
+        <li> <a href="#menu3">menu3</a> </li>
+    </ul>
+    <p id="menu1" class="tomato" style="color: turquoise">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Praesentium repellendus qui dolores atque consectetur eos labore! Eaque pariatur,
+        nesciunt ratione voluptates temporibus autem perferendis, doloribus accusantium quas modi quo impedit.</p>
+    <p class="tomato">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Praesentium repellendus qui dolores atque consectetur eos labore! Eaque pariatur,
+        nesciunt ratione voluptates temporibus autem perferendis, doloribus accusantium quas modi quo impedit.</p>
+    <p class="tomato">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Praesentium repellendus qui dolores atque consectetur eos labore! Eaque pariatur,
+        nesciunt ratione voluptates temporibus autem perferendis, doloribus accusantium quas modi quo impedit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Praesentium repellendus qui dolores atque consectetur eos labore! Eaque pariatur,
+        nesciunt ratione voluptates temporibus autem perferendis, doloribus accusantium quas modi quo impedit.</p>
+    <p id="menu2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Praesentium repellendus qui dolores atque consectetur eos labore! Eaque pariatur,
+        nesciunt ratione voluptates temporibus autem perferendis, doloribus accusantium quas modi quo impedit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Praesentium repellendus qui dolores atque consectetur eos labore! Eaque pariatur,
+        nesciunt ratione voluptates temporibus autem perferendis, doloribus accusantium quas modi quo impedit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Praesentium repellendus qui dolores atque consectetur eos labore! Eaque pariatur,
+        nesciunt ratione voluptates temporibus autem perferendis, doloribus accusantium quas modi quo impedit.</p>
+    <p id="menu3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Praesentium repellendus qui dolores atque consectetur eos labore! Eaque pariatur,
+        nesciunt ratione voluptates temporibus autem perferendis, doloribus accusantium quas modi quo impedit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Praesentium repellendus qui dolores atque consectetur eos labore! Eaque pariatur,
+        nesciunt ratione voluptates temporibus autem perferendis, doloribus accusantium quas modi quo impedit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Praesentium repellendus qui dolores atque consectetur eos labore! Eaque pariatur,
+        nesciunt ratione voluptates temporibus autem perferendis, doloribus accusantium quas modi quo impedit.</p>
+    <ul>
+        <li> <a href="#menu1">menu1</a> </li>
+        <li> <a href="#menu2">menu2</a> </li>
+        <li> <a href="#menu3">menu3</a> </li>
+    </ul>
+    <dl>
+        <dt>과일 이름</dt>
+        <!--리스트 제목 dt-->
+        <dd>딸기</dd>
+        <dd>바나나</dd>
+        <dd>포도</dd>
+    </dl>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>논리 연산자</title>
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+        /* var와 let의 차이점
+        var x = 6; var x = 12; 로 출력하고 콘솔에서 확인해보면 12만 보임.
+        var 로 선언하는 변수명은 재선언이 가능함 6으로 선언했던 걸 12로 선언한 게 되는 셈 오류가 생기지 않고 문법적으로 맞음
+        그러나 문제점은 여러명의 개발자가 공동으로 작업할 때 자주 쓰는 변수명이 겹치게 되면(한명은 문자를, 한명은 숫자를 넣는 등) 프로그램에 에러가 나는 경우 있음 
+        let x = 6; let x = 12; 로 출력하면 let은 에러가 남 선언 자체가 안됨 겹치는 거 불가능, 문법적으로 틀림, 재선언 안됨 var의 문제점을 보완한 것
+        재선언은 안되지만 재할당은 가능함 예를 들면 let x = 6; x = 12; 가능함 콘솔에서 12만 보임*/
+
+        let x = 6;
+        let y = 3;
+        
+        //&&엔드 논리 연산
+        document.getElementById('result').innerHTML = ( x < 10 && y > 1) + "<br>" + ( x > 10 && y > 1 );
+                                      // 참 && 참 -> && 양쪽이 다 참인 경우만 참      둘 중 하나만 거짓이면 false
+
+        
+    </script>
+</body>
+</html>

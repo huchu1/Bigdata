@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parallax</title>
+    <style>
+html, body { height: 100%; margin: 0; color: #777; }  
+.bg01, .bg02, .bg03 { background-position: center;  
+                      background-repeat: no-repeat;
+                      background-size: cover; 
+                      background-attachment: fixed; 
+                      position: relative; }
+.bg01 { background-image: url(images/bg01.jpg); min-height: 100%; }
+.bg02 { background-image: url(images/bg02.jpg); min-height: 400px; }
+.bg03 { background-image: url(images/bg03.jpg); min-height: 400px; }
+.caption { position: absolute; left: 50%; top: 50%; 
+           transform: translate(-50%, -50%); 
+           background-color: rgba(0,0,0,0.8); color: #fff;
+           padding: 20px; font-size: 24px; letter-spacing: 10px; }
+.txt01, .txt02, .txt03 { color: #777; 
+                         padding: 50px 100px; text-align: justify; 
+                         line-height: 1.8; }
+.txt03 { background-color: #282E34; color: #ddd; text-align: center; }                                  
+    </style>
+</head>
+<body>
+  <div class="bg01">
+    <span class="caption">SCROLL start</span>  
+  </div>
+  <div class="txt01">
+    <h2>HAPPY HAPPY HAPPY</h2>  
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero magni natus aut, sit iure aspernatur! Ad nostrum dolorum quidem! Impedit quam ratione, consequuntur quae iste provident explicabo natus vero delectus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero magni natus aut, sit iure aspernatur! Ad nostrum dolorum quidem! Impedit quam ratione, consequuntur quae iste provident explicabo natus vero delectus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero magni natus aut, sit iure aspernatur! Ad nostrum dolorum quidem! Impedit quam ratione, consequuntur quae iste provident explicabo natus vero delectus.</p>
+  </div>
+  <div class="bg02">
+    <span class="caption">Test Demo1</span>  
+  </div>
+  <div class="txt02">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At tempora incidunt amet repudiandae assumenda officiis saepe, nisi porro, nostrum ullam eum quasi minima mollitia nihil exercitationem voluptatibus laborum, alias quam.</p>
+  </div>
+  <div class="bg03">
+    <span class="caption">Test Demo2</span>    
+  </div>
+  <div class="txt03">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, obcaecati. Nam pariatur ex repellendus, debitis dolorem rerum earum at amet ad, laudantium nobis sapiente quisquam, architecto dignissimos velit repudiandae. Odio?</p>
+  </div>
+  <div class="bg01">
+    <span class="caption">SCROLL end</span>
+  </div>  
+</body>
+</html>

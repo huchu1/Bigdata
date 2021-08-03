@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>논리 연산자</title>
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+        let x = 2;
+        let y = '2';
+                
+        document.getElementById('result').innerHTML = (x === y) + '<br>' + (x ===y)
+        /*     (x == y) 데이터 타입은 비교하지 않고 모양만 비교함 그래서 true가 나옴
+               (x === y) 데이터 타입까지 전부 같아야 true가 나옴
+        */  
+    </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>글자 css속성</title>
+    <link rel="stylesheet" href="stlye.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&display=swap');
+       h1 { color: teal; 
+        font-family: 'Do Hyeon', sans-serif; 
+        font-size: 42px; 
+        font-weight: normal;
+        font-style: italic;
+        text-decoration: underline;
+        text-align: right;
+        letter-spacing: 20px; 
+        word-spacing: 50px;
+        text-shadow: 3px 3px 5px rgb(153, 16, 16); /* 첫번째는 세로 간격 두번째는 가로 간격 마지막은 그림자 선명도 숫자 작을수록 선명함*/ 
+    }
+        .textbox { text-indent: 50px; 
+                   text-transform: capitalize;
+                   line-height: 100px; /*숫자만 쓸 땐 텍스트 크기에 비례하여 n배*/ }
+                h2 { font-variant: small-caps; 
+                /* 소문자를 대문자로 모양만 변경 크기는 똑같음 */ }
+        .box {color: skyblue;
+              font-size: 32px;
+              font-family: 'Black Han Sans', sans-serif;
+              letter-spacing: 10px;
+              text-decoration: underline;
+              font-weight: bold;
+              text-shadow: 3px 5px 5px #ddd;
+              text-align: center;}
+        .list { list-style: none;
+            border-bottom: 2px dotted red; }
+        .sublist { list-style-position: inside;
+                   list-style-type: square;}
+        ol { list-style-type: decimal; }
+       #wrap { border: 2px solid blue;  margin: 0 auto;
+               width: 500px;  
+              padding: 20px 50px; }
+       /* 인라인은 위에서 아래로 쌓여서 너비 추가 안하면 무조건 화면에 꽉차게 나옴 */
+        .circle { width: 300px; height: 300px; 
+                  border: 3px solid orange;
+                  margin: 50px auto;
+                  border-radius: 50%; 
+                  text-align: center;
+                  line-height: 300px;
+                  box-shadow: 10px 10px 5px red;
+                }
+        .circle2 { width: 300px; height: 300px; 
+                  border: 3px solid orange;
+                  margin: 50px auto;
+                  border-top-left-radius: 50%; 
+                  border-bottom-right-radius: 50%;
+                  text-align: center;
+                  line-height: 300px;  }
+        .dot { list-style-image: url(dot.png); }
+        .dot li ul { list-style-type: square; 
+                     list-style-image: none;}
+    </style>
+</head>
+<body>
+    <div id="wrap" stlye="">
+        <h1>이지스퍼블리싱 신입 사원 모집 공고</h1>
+        <p class="box">IT 기획, 편집 부서에서 함께 할 신입 사원을 모집합니다.</p>
+        <ul class="list">
+            <li>- 모집 직군 : 편집 기획 부서</li>
+            <li>- 직무 내용 : 도서 프로듀싱 업무 (신입 지원 가능)</li>
+               <ul class="sublist">
+                   <li>도서 기획, 편집</li>
+                   <li>도서 홍보, 독자 소통</li>
+               </ul>
+            <li>- 접수 마감일 : 2021.3.6.</li>
+        </ul>
+        <p>자세한 내용은 공지 게시판을 참고하세요.</p>
+        <h2>Lorem ipsum dolor</h2>
+        <p class="textbox">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            At dolores eaque quis! Quae iste libero quaerat, 
+            atque voluptas aut similique ab est id aspernatur 
+            quas aperiam molestiae in nesciunt! Error?</p>
+        <ol>
+            <li>1월</li>
+            <li>2월</li>
+            <li>3월</li>
+        </ol>
+        <div class="circle">circle</div>
+        <div class="circle2">circle2</div>
+        <ul class="dot">
+            <li>1-1
+                <ul >
+                    <li>2-1</li>
+                    <li>2-2</li>
+                </ul>
+            </li>
+            <li>1-2</li>
+            <li>1-3</li>
+        </ul>
+    </div>
+</body>
+</html>

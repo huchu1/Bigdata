@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>투표가 가능한지 아닌지 확인해주는 프로그램</title>
+</head>
+<body>
+    <h1>투표 가능한 나이 확인하기</h1>
+    <input type="text" id="age" placeholder="나이를 입력하세요">
+    <button onclick="vote()">확인</button>
+    <hr>
+    <p id="result"></p>
+    <script>     
+        var basic = 18;   //     =     const standard = 18; (변하지 않는 데이터)
+
+        function vote(){
+            var age = document.getElementById('age').value;  // 요새 변수 선언은 let으로 많이 씀 <let age> var로 하면 가끔 변경이 되기도 해서.
+            console.log(age);
+            var result = age >= basic ? "가능" : "불가능";
+            // var basic 없이 var result = age > 18 ? "가능" : "불가능"; 로 바로 써도 됨. 변하지 않는 값(상수)는 const. 기준점은 standard
+        document.getElementById('result').innerHTML = "당신은 " + result + "합니다!";
+                                                                                                                            
+        }
+    </script>
+</body>
+</html> 

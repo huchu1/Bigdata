@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>float</title>
+    <!--인라인 블럭은 메뉴짤때 잘 안씀 간단하게 꾸밀 때만 씀-->
+    <style>
+        #wrap{border:10px solid red; width:800px; margin: 0 auto; overflow:hidden; }
+        #wrap div{width: 200px; height:500px; background-color: darkgreen; /*display: inline-block;*/ 
+                  float: left;}
+        #footer{ padding:20px; color:#fff; text-align:center; clear:both;}
+        #weather{ margin: 0 auto;   }
+        .menu{list-style:none; margin: 0 auto; padding: 0; width: 800px; overflow:hidden;}
+        .menu li{float:left; background-color:skyblue; width:100px; height:40px; text-align: center; line-height: 40px;}
+        .menu li:hover{background-color: crimson;}
+        .test{width:400px; height:200px; background-color: yellow;}
+        .inner{width:200px; height:500px; background-color: apua;}
+    </style>
+</head>
+<body>
+    <div id="weather">
+        <ul class="menu">
+            <li>날씨</li>
+            <li>맑음</li>
+            <li>흐림</li>
+            <li>장마</li>
+        </ul></div>
+    <div id="wrap">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>
+    </div>
+    <div id="footer">copyright</div>
+ 
+<div class="test">
+  <div class="inner">
+
+     </div>
+   </div>
+</div>
+</body>
+</html>
